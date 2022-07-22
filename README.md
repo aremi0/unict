@@ -1,6 +1,7 @@
 ## Appunti-unict
 Appunti personali - unict
 
+---
 ### Sistemi Operativi
 ##### Appunti: MdR 19-20
 1. [Appunti](./Sistemi_Operativi/)
