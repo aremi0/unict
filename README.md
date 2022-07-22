@@ -2,7 +2,7 @@
 Appunti personali - unict
 
 ## Sistemi Operativi
-1. [Appunti]("Sistemi Operativi (MdR 19-20)"/"Sistemi Operativi.docx")
+1. [Appunti](./Sistemi Operativi (MdR 19-20)/Sistemi Operativi.docx)
 2. [Esami passati di laboratorio](https://github.com/aremi0/lab-os-unict)
 
 ## Fisica
