@@ -2,9 +2,19 @@
 Appunti personali - unict
 
 ## Sistemi Operativi
-1. [Appunti](./Sistemi%20Operativi%20(MdR%2019-20))
-2. [Esami passati di laboratorio](https://github.com/aremi0/lab-os-unict)
+#### Appunti: MdR 19-20
+1. [Appunti](./Sistemi-Operativi/)
+2. [Esami passati - laboratorio](https://github.com/aremi0/lab-os-unict)
 
 ## Fisica
-1. [Formulario](./Fisica%20(Scordino%2021-22)/Formulario%20v3.3.pdf)
-2. [Alcune prove passate](./Fisica%20(Scordino%2021-22)/alcuniCompitiPassatiAssieme_soluzioni.pdf)
+#### Scordino 21-22
+1. [Formulario](./Fisica/Formulario_v3.3.pdf)
+2. [Prove passate - svolte](./Fisica/alcuniCompitiPassatiAssieme_soluzioni.pdf)
+
+## Analisi II
+#### Appunti: Naselli 20-21
+1. [Prova Capitolo I](./Analisi-II/AM2_P1.pdf)
+2. [Prova Capitolo I](./Analisi-II/AM2_P2.pdf)
+3. [Prova Capitolo I](./Analisi-II/AM2_P3.pdf)
+4. [Prova Capitolo I](./Analisi-II/AM2_P4.pdf)
+
