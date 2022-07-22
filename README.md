@@ -7,4 +7,4 @@ Appunti personali - unict
 
 ## Fisica
 1. [Formulario](./Fisica%20(Scordino%2021-22)/Formulario%20v3.3.pdf)
-2. [Alcune prove passate](./Fisica%20(Scordino%2021-22\)/alcuniCompitiPassatiAssieme_soluzioni.pdf)
+2. [Alcune prove passate](./Fisica%20(Scordino%2021-22)/alcuniCompitiPassatiAssieme_soluzioni.pdf)
