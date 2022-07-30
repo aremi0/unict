@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://calcolatrice.tsdw/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://calcolatrice.tsdw/">
+
+<xs:element name="Differenza" type="tns:Differenza"/>
+
+<xs:element name="DifferenzaResponse" type="tns:DifferenzaResponse"/>
+
+<xs:element name="Divisione" type="tns:Divisione"/>
+
+<xs:element name="DivisioneResponse" type="tns:DivisioneResponse"/>
+
+<xs:element name="Potenza" type="tns:Potenza"/>
+
+<xs:element name="PotenzaResponse" type="tns:PotenzaResponse"/>
+
+<xs:element name="Prodotto" type="tns:Prodotto"/>
+
+<xs:element name="ProdottoResponse" type="tns:ProdottoResponse"/>
+
+<xs:element name="Somma" type="tns:Somma"/>
+
+<xs:element name="SommaResponse" type="tns:SommaResponse"/>
+
+<xs:complexType name="Potenza">
+<xs:sequence>
+<xs:element name="x" type="xs:double"/>
+<xs:element name="y" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="PotenzaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Divisione">
+<xs:sequence>
+<xs:element name="x" type="xs:double"/>
+<xs:element name="y" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DivisioneResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Somma">
+<xs:sequence>
+<xs:element name="x" type="xs:double"/>
+<xs:element name="y" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SommaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Prodotto">
+<xs:sequence>
+<xs:element name="x" type="xs:double"/>
+<xs:element name="y" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ProdottoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Differenza">
+<xs:sequence>
+<xs:element name="x" type="xs:double"/>
+<xs:element name="y" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DifferenzaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

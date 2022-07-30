@@ -19,3 +19,12 @@ Appunti personali - unict
 3. [Prova Capitolo III](./Analisi_II/AM2_P3.pdf)
 4. [Prova Capitolo IV](./Analisi_II/AM2_P4.pdf)
 ---
+### Tecnologie per i Sistemi Distribuiti
+#### {Pappalardo 20-21}
+1. [Socket e Thread](./TSDW/Socket_Thread/)
+2. [Servlet e Springboot](./TSDW/Servlet_Springboot/)
+    - [Servlet vsCode](./TSDW/Servlet_Springboot/Servlet%20(Server%20e%20Client)%20-%20HowTo.txt)
+    - [Springboot vsCode](./TSDW/Servlet_Springboot/Springboot%20-%20HowTo.txt)
+3. [PHP e Laravel](./TSDW/PHP_Laravel/)
+    - [Laraverl vsCode](./TSDW/PHP_Laravel/HowTo%20-%20Laravel.txt)
+---
