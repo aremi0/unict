@@ -1,7 +1,7 @@
 # unict personale
 
 ## Progetti Universitari:
-- [PHP e Laravel](./Tecnologie_Sistemi_Distribuiti_Web/Laravel/Progettini_1amolti/)
+- [Laravel](./Tecnologie_Sistemi_Distribuiti_Web/Laravel/Progettini_1amolti/)
 - [SpringBoot](./Tecnologie_Sistemi_Distribuiti_Web/Springboot/Progettini_1amolti/)
 - [SQL](./Database/Progetto/)
 - [DesignPattern Java](./Ingegneria_Software/Progettini/)
