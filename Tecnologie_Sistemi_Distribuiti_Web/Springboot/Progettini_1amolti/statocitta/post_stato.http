@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/stato
+Content-Type: application/json
+
+{
+    "nome":"Italia",
+    "popolazione":"64000000"
+}

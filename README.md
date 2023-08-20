@@ -1,8 +1,9 @@
-## Appunti-unict
+# unict personale
 
-Appunti personali - unict
-
----
+## Progetti Universitari:
+- [PHP e Laravel](./Tecnologie_Sistemi_Distribuiti_Web/Laravel/Progettini_1amolti/)
+- [SpringBoot](./Tecnologie_Sistemi_Distribuiti_Web/Springboot/Progettini_1amolti/)
+- [SQL](./Database/Progetto/)
 
 ### Sistemi Operativi
 

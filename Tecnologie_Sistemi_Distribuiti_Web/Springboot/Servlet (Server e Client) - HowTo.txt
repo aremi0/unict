@@ -1,0 +1,36 @@
+Creare progetto del WebServer
+-> new -> Web Service...
+
+Creare progetto del Client
+-> new -> Web Service Client...
+-> new -> Servlet
+Sulla Servlet del client:
+    -nel metodo processRequest aggiungere:
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet VolumeServlet</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<p>Benvenuto nel calcolatore</p>");
+            out.println("<form action='VolumeServlet' method='POST'>");
+            out.println("<input type='number' name='x' placeholder='x'>");
+            out.println("<input type='number' name='y' placeholder='y'>");
+            out.println("<input type='number' name='z' placeholder='z'>");
+            out.println("<input type='submit' value='Calcola' >");
+            out.println("</input>");
+            out.println("</body>");
+            out.println("</html>");
+
+    -draggare le operazioni del server
+
+    -nel doPost aggiungere:
+        response.setContentType("text/html");
+        PrintWriter out=response.getWriter();
+        
+        double x = Double.parseDouble(request.getParameter("x"));
+        
+        out.println("Il bho è: "+serverMetodo(x,y,z));
+        out.println("<br><a href=/VolumeClient/VolumeServlet>Indietro</>");
+
+FINE

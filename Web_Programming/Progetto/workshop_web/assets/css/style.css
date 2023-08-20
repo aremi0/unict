@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+
+/*Risoluzione*/
+@media (max-width: 767px) {
+    .col-sm- {
+        
+    }
+}
+/*FINE Risolzione*/
+
+/* Body e Classi Ausiliarie */
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+/* FINE Body e Classi Ausiliarie */
+
+/* Barra di Navigazione in alto*/
+/* Menu e logo */
+nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 999;
+}
+
+nav .brand{
+    cursor: pointer;
+}
+
+.brand{
+    display: inline-block;
+    padding: 16px 0;
+}
+
+nav>ul{
+    float: right;
+    cursor: pointer;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav>ul>li{
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+nav>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+nav>ul>li::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    left: 15px;
+    bottom: -2px;
+    transition: width .3s ease-in-out;
+}
+
+nav>ul>li:hover::after{
+    width: 40%;
+}
+
+nav>ul>li>a.active::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #fff;
+    left: 15px;
+    bottom: -2px;
+}
+/* FINE Menu e logo */
+/* Immagine, scritte e pulsanti */
+.hero{
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    z-index: 1;
+    padding: 160px 0 100px 0;
+}
+
+.hero .cta{
+    position: relative;
+    z-index: 3;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 767px){
+    .hero::after{
+        opacity: 1;
+    }
+}
+
+.hero .cta>h1{
+    position: relative;
+    cursor: default;
+    color: #ffd500;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4.3em;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.hero .cta>h1::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+}
+
+.hero img{
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.white-txt{
+    color: #fff !important;
+}
+
+.btn{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    font-size: 1.2em;
+    padding: 20px 35px;
+    border-radius: 6px;
+}
+
+.btn-hero{
+    margin-top: 40px;
+    margin-right: 15px;
+    font-weight: 600;
+    background-color: rgba(115, 115, 115, 0.4);
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.white-icon{
+    fill: #fff;
+    transition: fill 0.3s, ease-in-out;
+}
+
+.btn-hero:hover{
+    background-color: #ffd500;
+    color: #000;
+}
+
+.btn-hero:hover .white-icon{
+    fill: #000;
+}
+
+.btn-hero>svg{
+    margin-right: 5px;
+}
+/* FINEImmagine, scritte e pulsanti */
+/* FINE Barra di Navigazione in alto*/
+
+.locandine .sezione{
+    position: relative;
+    color: #000;
+    font-weight: 800;
+    font-size: 1.1em;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.locandine .card{
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 350px;
+    width: 233px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.locandine .card-1{
+    background-image: url(../images/wick.png);
+}
+
+.locandine .card-2{
+    background-image: url(../images/avengers.png);
+}
+
+.locandine .card-3{
+    background-image: url(../images/matrix.png);
+}
+
+.locandine .card-4{
+    background-image: url(../images/300.png);
+}
+
+.locandine .card .card-text{
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    height: 200px;
+    transition: bottom 0.2s ease-in-out;
+}
+
+.locandine .card:hover .card-text{
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 6px;
+    bottom: 0;
+    width: 100%;
+    transition: bottom 0.2s ease-in-out;
+}
+
+.locandine .card-text .icon{
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+}
+
+.locandine .card-text .icon>.icon-play{
+    position: absolute;
+    top: 7px;
+    left: 9px;
+}
+
+.locandine .card-text .title{
+    position: relative;
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.locandine .card-text .info{
+    position: relative;
+    font-size: 0.70em;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.locandine .card-text .trama{
+    position: relative;
+    font-size: 0.68em;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.locandine .card-text .gen{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 165px;
+    margin: 0;
+}
+
+.locandine .card-text .gen .genere{
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-bottom: 0;
+    left: -4px;
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    font-size: 0.72em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.fine-pagina{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 30px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 999;
+}
+
+.fine-pagina img{
+    cursor: pointer;
+}   

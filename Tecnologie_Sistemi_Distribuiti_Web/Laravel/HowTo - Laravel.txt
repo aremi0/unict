@@ -1,0 +1,44 @@
+laravel create autorelibro
+
+php artisan make:migration create_authors_table
+php artisan make:migration create_authors_table
+
+Modificare le due tabelle:
+    -nella tabella sottostante inserire la chiave esterna:
+        $table->bigInteger('id_autore')->unsigned()->nullable(false);
+        $table->foreign('id_autore')->references('id')->on('authors')->onDelete('cascade');
+
+php artisan make:controller AuthorsController -r -m Author
+php artisan make:controller BooksController -r -m Book
+
+Modifica le due classi del Models:
+    -tabella sopra:
+            public function books(){
+                return $this->hasMany(Book::class);
+            }
+
+    -tabella sotto:
+            public function author(){
+                return $this->belongsTo(Author::class);
+            }
+
+php artisan migrate
+php artisan migrate:status
+
+Nella Route Aggiungere:
+    Route::resource('/author', AuthorsController::class);
+    Route::resource('/book', BooksController::class);
+
+php artisan route:list
+
+Nella Route Modificare:
+    Route::get('/', [AuthorsController::class, 'index']);
+
+Modificare di conseguenza il controller della classe sopra:
+    public function index()
+    {
+        $autori = Author::all();
+        return view('welcome', compact('autori'));
+    }
+
+ecc...

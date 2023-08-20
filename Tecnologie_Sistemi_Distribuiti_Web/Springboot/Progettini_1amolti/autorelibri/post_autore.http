@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/autore
+Content-Type: application/json
+
+{
+    "nome":"Pippo",
+    "nascita":"2000-02-20T10:34:12"
+}

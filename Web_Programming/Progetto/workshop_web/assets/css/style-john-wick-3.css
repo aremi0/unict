@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+
+/* Body e Classi Ausiliarie */
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.mt-30{
+    margin-top: 30px !important;
+}
+
+.mb-30{
+    margin-bottom: 30px !important;
+}
+
+.my-30{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+/* FINE Body e Classi Ausiliarie */
+
+/* Barra di Navigazione in alto*/
+/* Menu e logo */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 999;
+}
+
+nav .brand{
+    cursor: pointer;
+}
+
+.brand{
+    display: inline-block;
+    padding: 16px 0;
+}
+
+nav>ul{
+    float: right;
+    cursor: pointer;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+nav>ul>li{
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+nav>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+nav>ul>li::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    left: 15px;
+    bottom: -2px;
+    transition: width .3s ease-in-out;
+}
+
+nav>ul>li:hover::after{
+    width: 40%;
+}
+
+nav>ul>li>a.active::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #fff;
+    left: 15px;
+    bottom: -2px;
+}
+/* FINE Menu e logo */
+/* Immagine, scritte e pulsanti */
+.hero{
+    position: relative;
+    overflow: hidden;
+    height: 646px;
+    width: 100%;
+    background-image: url(../images/hero-detail.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    padding: 160px 0 100px 0;
+}
+
+.hero .cta{
+    position: relative;
+    z-index: 3;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 2;
+}
+
+.hero .cta>h1{
+    position: relative;
+    cursor: default;
+    color: #752fd1;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4.05em;
+    font-weight: 800;
+    padding-bottom: 5;
+}
+
+.hero .cta span{
+    position: relative;
+    cursor: default;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.3em;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.hero .cta .after-span::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+}
+
+.hero img{
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.white-txt{
+    color: #fff !important;
+}
+
+.grey-txt{
+    color: #afafaf !important;
+}
+
+.btn{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border: none;
+    font-size: 1.2em;
+    padding: 20px 35px;
+    border-radius: 6px;
+}
+
+.btn-hero{
+    margin-top: 80px;
+    margin-right: 15px;
+    font-weight: 600;
+    background-color: rgba(115, 115, 115, 0.4);
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.white-icon{
+    fill: #fff;
+    transition: fill 0.3s, ease-in-out;
+}
+
+.btn-hero:hover{
+    background-color: #752fd1;
+    color: #fff;
+}
+
+.btn-hero>svg{
+    margin-right: 5px;
+}
+/* FINEImmagine, scritte e pulsanti */
+/* FINE Barra di Navigazione in alto*/
+
+/*Sezione centrale, informazioni sul film*/
+.sezione-centrale{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #161616;
+}
+
+.sezione-centrale .dati-film{
+    cursor: default;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.sezione-centrale .dati-film h3{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.sezione-centrale .dati-film h5{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.sezione-centrale .dati-film h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    font-weight: 600;
+}
+
+.sezione-centrale .dati-film .gen .genere{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 3%;
+    margin-bottom: 0;
+    left: -8px;
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    transition: border 0.4s ease-in-out;
+}
+
+.sezione-centrale .dati-film .gen .genere:hover{
+    border-color: #752fd1;
+    transition: border-color 0.25s ease-in-out;
+}
+
+.sezione-centrale .trama-artisti{
+    cursor: default;
+    margin-top: 108px;
+}
+
+.sezione-centrale .trama-artisti h5{
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.sezione-centrale .trama-artisti h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.sezione-centrale .trama-artisti .attore{
+    display: inline-block;
+    position: relative;
+}
+
+.sezione-centrale .trama-artisti .attore>img{
+    padding: 0 20px;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.sezione-centrale .trama-artisti .attore h5{
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sezione-centrale .trama-artisti .attore h6{
+    margin-top: 3px;
+    margin-bottom: 0;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sezione-centrale .trama-artisti .altro{
+    position: relative;
+    display: inline-block;
+    bottom: 35px;
+}
+
+.sezione-centrale .trama-artisti .altro>div{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #afafaf;
+}
+
+.sezione-centrale .trama-artisti .altro>h5{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #fff ;
+}
+
+.fine-pagina{
+    position: relative;
+    background-color: #000;
+    height: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 999;
+}
+
+.fine-pagina img{
+    cursor: pointer;
+}  

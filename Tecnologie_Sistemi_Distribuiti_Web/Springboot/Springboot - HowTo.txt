@@ -1,0 +1,59 @@
+>Spring Initializer: create a Maven project
+
+target-classes-application.properties:
+    spring-mysql-A (snippets)
+    e sistemare i dati del database
+
+creare file NomeClasse.java (Autore.java):
+    spring-entity-A
+
+    poi aggiungere altre variabili e
+    creare il costruttore e i metodi get-set-toString
+
+repository -> service -> controller (spring-repo-A | spring-service-A | spring-ctrl-A)
+
+controller:
+    /api
+    NomeClasse
+    /NomeClasse
+
+Adesso posso mandare online il server e mandare richieste post e get
+FINE
+
+Creazione della seconda tabella e relazione 1aMolti:
+    -creare nuova entità e popolarla come la madre.
+    -Nella entity inserire sotto @entity
+    @Table(name = "libro", uniqueConstraints = {@UniqueConstraint(columnNames = {"nome", "autore_id"})})
+    poi definire gli altri parametri compreso un oggetto Autore (in questo caso)
+    @ManyToOne
+    private Autore autore;
+
+    -repository -> spring-repo-B
+
+    -service, oltre allo snippet aggiungere:
+            public List<Libro> getAutoreLibri(Long autoreId) {
+            List<Libro> libri = new ArrayList<>();
+            repository.findByAutoreId(autoreId).forEach(libri::add);
+            return libri;
+        }
+
+        public List<Libro> getNomeLibri(String nome) { //Restituisce il nome di tutti i libri di un autore
+            List<Libro> libri = new ArrayList<>();
+            repository.findByNome(nome).forEach(libri::add);
+            return libri;
+        }
+    
+    -controller, oltre allo snippets modificare i metodi in base alla relazione
+FINE
+
+
+POST http://localhost:3000/api/libro
+Content-Type: application/json
+
+{
+    "autore":{
+        "id":"1"
+    },
+    "nome":"Rosso Cobalto22",
+    "pagine":"1205"
+}
