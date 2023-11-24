@@ -41,8 +41,8 @@ WHERE idproiezione = 4 OR idproiezione = 10;
 -- Op3. Uso abbonamento per ingresso alla proiezione 1 e 3 (anche online)
 INSERT INTO `prenotazione` (`idabbonamento`, `idproiezione`)
     VALUES
-    ("bbbbbb", 1),
-    ("bbbbbb", 3);
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 1),
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 2);
 
 /*
 SELECT *
@@ -67,12 +67,12 @@ INSERT INTO `abbonamento` (`idtipo`, `ingressi_rimanenti`, `data_emissione`)
 -- Op4. Rinnovo di un abbonamento manentenendo il piano
 UPDATE abbonamento
     SET data_emissione = "2024-01-01"
-    WHERE idabbonamento = "bbbbbb";
+    WHERE idabbonamento = "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb";
 
 -- Op4. Rinnovo di un abbonamento cambiando il piano
 UPDATE abbonamento
     SET idtipo = 1, data_emissione = "2025-01-01"
-    WHERE idabbonamento = "aaaaaa";
+    WHERE idabbonamento = "ffffffff-ffff-ffff-ffff-ffffffffffff";
 
 /*
 SELECT *
@@ -118,7 +118,7 @@ FROM film;
 -- Op7. Ricerca dei cinema che proietteranno il film Django
 SELECT film.titolo as Titolo, cinema.nome as Cinema, cinema.indirizzo, cinema.citta as Citta,
         COALESCE(ip.data_ultima_proiezione, "Coming soon!") as "In proiezione fino al:"
-FROM inproiezione as ip JOIN film ON ip.idfilm = film.idfilm
+FROM inProiezione as ip JOIN film ON ip.idfilm = film.idfilm
     JOIN cinema ON cinema.idcinema = ip.idcinema
 WHERE film.titolo LIKE "%Django%";
 

@@ -101,7 +101,7 @@ CREATE TABLE `cinema_multi`.`tipoAbbonamento` (
 ENGINE = InnoDB;
 
 CREATE TABLE `cinema_multi`.`abbonamento` (
-    `idabbonamento` CHAR(6) NOT NULL DEFAULT uuid(),
+    `idabbonamento` uuid NOT NULL DEFAULT uuid(),
     `idtipo` INT NOT NULL,
     `ingressi_rimanenti` TINYINT NOT NULL DEFAULT 0,
     `data_emissione` DATE NOT NULL DEFAULT (CURRENT_DATE),
@@ -113,7 +113,7 @@ CREATE TABLE `cinema_multi`.`abbonamento` (
 ENGINE = InnoDB;
 
 CREATE TABLE `cinema_multi`.`prenotazione` (
-    `idabbonamento` CHAR(6) NOT NULL,
+    `idabbonamento` uuid NOT NULL,
     `idproiezione` INT NOT NULL,
     PRIMARY KEY (`idabbonamento`, `idproiezione`),
     FOREIGN KEY (`idabbonamento`)
