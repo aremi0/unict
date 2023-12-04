@@ -9,6 +9,8 @@
     MariaDB 10.4.25
 */
 
+USE `cinema_multi` ;
+
 -- Operazioni previste
 -- --------------------------------------------
 -- P.s. Le zone commentate tra /* */ se decommentate stamperanno le modifiche effettuate dall'operazione
@@ -41,8 +43,8 @@ WHERE idproiezione = 4 OR idproiezione = 10;
 -- Op3. Uso abbonamento per ingresso alla proiezione 1 e 3 (anche online)
 INSERT INTO `prenotazione` (`idabbonamento`, `idproiezione`)
     VALUES
-    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 1),
-    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 2);
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 3),
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 4);
 
 /*
 SELECT *

@@ -12,7 +12,7 @@
 -- Creazione dello schema
 -- --------------------------------------------
 CREATE SCHEMA IF NOT EXISTS  `cinema_multi` DEFAULT CHARACTER SET utf8 ;
-USE `cinema_multi` ;USE `cinema_multi` ;
+USE `cinema_multi` ;
 
 
 
@@ -446,13 +446,13 @@ INSERT INTO `abbonamento` (`idtipo`, `ingressi_rimanenti`, `data_emissione`)
 
 INSERT INTO `abbonamento` (`idabbonamento`, `idtipo`, `ingressi_rimanenti`, `data_emissione`)
     VALUES
-    ("aaaaaa", 2, DEFAULT, DEFAULT),
-    ("bbbbbb", 3, DEFAULT, DEFAULT);
+    ("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb", 2, DEFAULT, DEFAULT),
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 3, DEFAULT, DEFAULT);
 
 INSERT INTO `prenotazione` (`idabbonamento`, `idproiezione`)
     VALUES
-    ("aaaaaa", 6),
-    ("aaaaaa", 8),
-    ("aaaaaa", 1),
-    ("aaaaaa", 10);
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 6),
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 8),
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 1),
+    ("ffffffff-ffff-ffff-ffff-ffffffffffff", 10);
 
